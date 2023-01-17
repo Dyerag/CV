@@ -12,16 +12,22 @@
 <body>
     <div class="display-4 text-center fw-bold bg-primary text-light mb-4 border-bottom border-5">CV</div>
 
-
+    </div>
     <div class="container-lg">
-        <div class="row g-0 justify-content-start">
-            <div class="col-3 ">
-                <div class="card shadow-lg" > <!--picture on the card, with personal info right under-->
+        <div class="row g-0">
+            <div class="col-6 col-md-3 me-5">
+                <!--info card-->
+                <div class="card shadow-lg">
+
+                    <!--picture on the card-->
                     <img src="assets\me!.jpg" class="card-img-top img-thumbnail" alt="billed af mig">
                     <div class="card-header bg-dark text-light">
-                        <h5 class="card-title">Personlig Information</h5>
 
-                        <div class="card-bodyt border-top border-3 border-secondary">
+                        <!--text on the card-->
+                        <h5 class="card-title">Personlig Information</h5>
+                        <div class="card-body border-top border-3 border-secondary">
+                            <!--on smaller screens my name appears on the card instead-->
+                            <p class="lead card-text d-md-none">Navn: Dylan Eric Aghahowa</p>
                             <p class="lead card-text">Adresse: Gavlhusvej 29, 2tv, 2700 Brønshøj</p>
                             <p class="lead card-text">Født: 12/02/03</p>
                             <p class="lead card-text">tlf: 42916305</p>
@@ -33,9 +39,32 @@
 
                 </div>
             </div>
-            <div class="col display-4 fw-bold m-2 ms-5">Dylan Eric Aghahowa</div>
-            <!--^name next to picture. issue with picture and name overlapping on smaller screens^-->
-            <!--put education, language and description of me under the name. maybe on a row?-->
+
+
+            <div class="col">
+                <!--on smaller screens, my name is hidden here-->
+                <div class="display-4 fw-bold my-2 d-none d-md-block">
+                    Dylan Eric Aghahowa
+                </div>
+                <br><br><br>
+                <!--IT-experience. List group--> <!--it-experience goes right under my name-->
+                <div class="col-4 border-end">
+                    <h3 class="fw-bold text-decoration-underline text-center">IT-erfaring</h3>
+                    <p>Jeg har en Grundlæggende kendskab til PC-teknik, Operativsystemer, Datakommunikation og
+                        programmering. Det inkluderer f.eks.</p>
+                    <ul class="list-group">
+                        <li class="list-group-item my">
+                            <div class="text-decoration-underline h6">PC Teknik</div>
+                            text test
+                        </li>
+                    </ul>
+                    <!--portfolio goes right next to my IT-experience(either in an accfordion, or a list. Maybe even a card)-->
+                </div>
+
+            </div>
+            <!--portfolio. -->
+
+
         </div>
     </div>
 
