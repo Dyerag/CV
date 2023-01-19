@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>website</title>
 </head>
 
 <body>
-    <div class="display-4 text-center fw-bold bg-primary text-light mb-4 border-bottom border-5">CV</div>
+    <div class="display-4 text-center fw-bold bg-primary text-light mb-5 border-bottom border-5">CV</div>
 
-    </div>
+
     <div class="container-lg">
         <div class="row g-0">
-            <div class="col-6 col-md-3 me-5">
-                <!--info card-->
+            <!--info card-->
+            <div class="col-6 col-md-3">
                 <div class="card shadow-lg">
 
                     <!--picture on the card-->
@@ -40,33 +41,105 @@
                 </div>
             </div>
 
-
+            <!--info colum-->
             <div class="col">
-                <!--on smaller screens, my name is hidden here-->
-                <div class="display-4 fw-bold my-2 d-none d-md-block">
+                <!--on smaller screens, my name is removed from the center-->
+                <div class="display-4 fw-bold mt-3 mb-5 d-none d-md-block text-center">
                     Dylan Eric Aghahowa
                 </div>
-                <br><br><br>
-                <!--IT-experience. List group--> <!--it-experience goes right under my name-->
-                <div class="col-4 border-end">
-                    <h3 class="fw-bold text-decoration-underline text-center">IT-erfaring</h3>
-                    <p>Jeg har en Grundlæggende kendskab til PC-teknik, Operativsystemer, Datakommunikation og
-                        programmering. Det inkluderer f.eks.</p>
-                    <ul class="list-group">
-                        <li class="list-group-item my">
-                            <div class="text-decoration-underline h6">PC Teknik</div>
-                            text test
-                        </li>
-                    </ul>
-                    <!--portfolio goes right next to my IT-experience(either in an accfordion, or a list. Maybe even a card)-->
+
+                <!-- education, language, discription and work experience are under my name-->
+                <div class="row ms-5 border border-5 gx-5">
+
+                    <!--education-->
+                    <div class="col border border-1">
+                        <h3 class="text-decoration-underline fw-bold text-center">Uddannelse</h3>
+
+                    </div>
+
+                    <!--language-->
+                    <div class="col">
+                        <h3 class="text-decoration-underline fw-bold text-center">Sprog</h3>
+
+                    </div>
+
+                    <!--discription-->
+                    <div class="col">
+                        <h3 class="text-decoration-underline fw-bold text-center">Personbeskrivelse</h3>
+
+                    </div>
+
+                    <!--work experience-->
+                    <div class="col">
+                        <h3 class="text-decoration-underline fw-bold text-center">Erhvervserfaring</h3>
+
+                    </div>
                 </div>
 
             </div>
-            <!--portfolio. -->
-
 
         </div>
+
+        <!--moved IT-experience and portfolio under everything else. Gotta do some layout formatting-->
+        <div class="row">
+            <!--IT-experience. List group-->
+            <div class="col border-end border-3">
+                <div>
+                    <!--IT-experience discription-->
+                    <h3 class="fw-bold text-decoration-underline text-center">IT-erfaring</h3>
+                    <p>Jeg har en Grundlæggende kendskab til PC-teknik, Operativsystemer, Datakommunikation og
+                        programmering. Det inkluderer f.eks.
+                    </p>
+                </div>
+                <!--first pair of list groups-->
+                <div class="row g-0">
+                    <ul class="list-group col">
+                        <li class="list-group-item py-3 order-last">
+                            <h5 class="text-decoration-underline">PC Teknik</h5>
+                            <i class="bi bi-dot"></i>RAM <br>
+                            <i class="bi bi-dot"></i>CPU <br>
+                            <i class="bi bi-dot"></i>Bundkort <br>
+                            <i class="bi bi-dot"></i>BIOS parametre
+                        </li>
+                        <li class="list-group-item pt-3 ">
+                            <h5 class="text-decoration-underline">Operativsystemer</h5>
+                            <i class="bi bi-dot"></i>Konfiguration af netværksindstillingerne <br>
+                            <i class="bi bi-dot"></i>Styring af rettigheder til ressourcer <br>
+                            <i class="bi bi-dot"></i>Opsætning af systemet til fjernadgang <br>
+                            <i class="bi bi-dot"></i>Oprettelse og administration af brugere
+                        </li>
+                    </ul>
+                    <!--second pair of list groups-->
+                    <ul class="list-group border col order-first">
+                        <li class="list-group-item py-3">
+                            <h5 class="text-decoration-underline">Datakommunikation</h5>
+                            <i class="bi bi-dot"></i> Opbygning af LAN/WAN-netværk <br>
+                            <i class="bi bi-dot"></i>Fejlfinding på netværk <br>
+                            <i class="bi bi-dot"></i>OSI-modellen
+                        </li>
+                        <li class="list-group-item py-3 order-first">
+                            <h5 class="text-decoration-underline ">Programmering</h5>
+                            <i class="bi bi-dot"></i>Visual Studio <br>
+                            <i class="bi bi-dot"></i>Git <br>
+                            <i class="bi bi-dot"></i>html <br>
+                            <i class="bi bi-dot"></i>Funktioner/metoder <br>
+                            <i class="bi bi-dot"></i>Betingelser <br>
+                            <i class="bi bi-dot"></i>Løkkestrukturer <br>
+                            <i class="bi bi-dot"></i>Variabler/konstanter/datatyper
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--portfolio. -->
+            <!--portfolio goes right next to my IT-experience(either in an accordion, or a list. (Maybe even a card. probably not))-->
+
+            <div class="col ">
+                Lorem ipsum dolor
+            </div>
+        </div>
     </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
