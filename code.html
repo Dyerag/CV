@@ -17,7 +17,7 @@
         <div class="row g-0 mb-md-5 mb-3 justify-content-center">
 
             <!--personal info card colum-->
-            <div class="col-sm-6 col-8 col-md-3 me-sm-5">
+            <div class="col-sm-6 col-8 col-md-3 me-sm-4">
 
                 <!--picture on the card-->
                 <img src="assets\me!.jpg" class="card-img-top img-thumbnail"
@@ -29,11 +29,11 @@
                     <div class="card-body border-top border-3 border-secondary">
                         <!--on smaller screens my name appears on the card instead-->
                         <p class="lead d-md-none">Navn: Dylan Eric Aghahowa</p>
-                        <p class="lead">Adresse: Gavlhusvej 29, 2tv, 2700 Brønshøj</p>
+                        <p class="lead">Adresse: Gavlhusvej 29, 2 tv, 2700 Brønshøj</p>
                         <p class="lead">Født: 12/02/03</p>
                         <p class="lead">tlf: 42916305</p>
                         <p class="lead text-break">E-mail: Dylaneric2003@gmail.com</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary">pdf CV</a>
                         <!--^reminder to potentionally put download link to my pdf CV^-->
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                 </div>
 
                 <!--general info-->
-                <div class="row ps-md-3 gx-5 gy-0">
+                <div class="row ps-md-3 gx-md-5 gy-0">
 
                     <!--discription of me-->
                     <div class="mb-3 px-md-5 mt-5 mt-md-0">
@@ -88,14 +88,15 @@
             </div>
         </div>
 
-        <!--IT-experience. List group-->
+        <!--second IT-experience/Portfolio-->
         <div class="row pt-md-5">
 
-            <div class="col-md g-0 row pe-3">
+            <!--IT-experience. List group-->
+            <div class="col-md g-0 row me-5 mb-5">
                 <!--IT-experience discription-->
                 <div>
                     <h3 class="border-bottom border-2 border-dark fw-bold text-center">IT-erfaring</h3>
-                    <p class="">
+                    <p>
                         Jeg har en Grundlæggende kendskab til PC-teknik, Operativsystemer, Datakommunikation og
                         programmering. Det inkluderer f.eks.
                     </p>
@@ -103,17 +104,18 @@
 
                 <!--first pair of list groups-->
                 <ul class="list-group col-md">
-                    <li class="list-group-item py-3">
+                    <li class="list-group-item pt-3">
                         <h5 class="text-decoration-underline">Programmering</h5>
                         <i class="bi bi-dot"></i>Visual Studio <br>
-                        <i class="bi bi-dot"></i>Git <br>
-                        <i class="bi bi-dot"></i>html <br>
                         <i class="bi bi-dot"></i>Funktioner/metoder <br>
                         <i class="bi bi-dot"></i>Betingelser <br>
                         <i class="bi bi-dot"></i>Løkkestrukturer <br>
-                        <i class="bi bi-dot"></i>Variabler/konstanter/datatyper
+                        <i class="bi bi-dot"></i>Variabler/konstanter/datatyper <br>
+                        <i class="bi bi-dot"></i>Git <br>
+                        <i class="bi bi-dot"></i>html <br>
+                        <i class="bi bi-dot"></i>Bootstrap 5
                     </li>
-                    <li class="list-group-item py-3">
+                    <li class="list-group-item py-3 pb-md-4">
                         <h5 class="text-decoration-underline">Datakommunikation</h5>
                         <i class="bi bi-dot"></i> Opbygning af LAN/WAN-netværk <br>
                         <i class="bi bi-dot"></i>Fejlfinding på netværk <br>
@@ -138,57 +140,25 @@
                         <i class="bi bi-dot"></i>BIOS parametre
                     </li>
                 </ul>
-
             </div>
-            <!--portfolio. -->
-            <!--portfolio goes right next to my IT-experience(either in an accordion, or a list. (Maybe even a card. probably not))-->
 
-            <div class="col-md mt-5 accordion" id="Portfolio">
+            <!--portfolio-->
+            <div class="col-md ms-md-5 mb-5 accordion" id="Portfolio">
+                <h3 class="fw-bold border-bottom border-2 border-dark text-center mb-4">Portfolio</h3>
+
+                <!--hjemmeside-->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="P1">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#Port-1" aria-expanded="true" aria-controls="Port-1">
-                            Portfolio
+                            data-bs-target="#Port-1" aria-expanded="false" aria-controls="Port-1">
+                            CV hjemmeside
                         </button>
                     </h2>
                     <div id="Port-1" class="accordion-collapse collapse" aria-labelledby="P1"
                         data-bs-parent="#Portfolio">
                         <div class="accordion-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, perferendis! Excepturi
-                                sapiente illo illum autem suscipit maiores, doloremque animi mollitia?</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, voluptates.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="P2">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#Port-2" aria-expanded="true" aria-controls="Port-2">
-                            Portfolio
-                        </button>
-                    </h2>
-                    <div id="Port-2" class="accordion-collapse collapse" aria-labelledby="P2"
-                        data-bs-parent="#Portfolio">
-                        <div class="accordion-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, perferendis! Excepturi
-                                sapiente illo illum autem suscipit maiores, doloremque animi mollitia?</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, voluptates.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="heading-3">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#Portfolio-1" aria-expanded="true" aria-controls="Portfolio-1">
-                            Portfolio
-                        </button>
-                    </h2>
-                    <div id="Portfolio-3" class="accordion-collapse collapse" aria-labelledby="Portfolio-1"
-                        data-bs-parent="#Portfolio">
-                        <div class="accordion-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, perferendis! Excepturi
-                                sapiente illo illum autem suscipit maiores, doloremque animi mollitia?</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, voluptates.</p>
+                            <p>hele denne hjemmeside er lavet ved brug af html og Bootstrap 5. Siden er designet til
+                                også at tilpasse sig mindre skærme.</p>
                         </div>
                     </div>
                 </div>
